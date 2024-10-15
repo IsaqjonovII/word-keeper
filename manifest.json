@@ -1,0 +1,21 @@
+
+{
+    "manifest_version": 3,
+    "name": "Word Keeper",
+    "description": "Your pocket dictionary",
+    "version": "1.0",
+    "action": {
+        "default_popup": "/views/welcome.html",
+        "default_icon": "/assets/welcome.png"
+    },
+    "icons": {
+        "16": "/assets/icon-16.png",
+        "32": "/assets/icon-32.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["index.js"],
+           "matches": ["<all_urls>"]
+        }
+    ]
+}
